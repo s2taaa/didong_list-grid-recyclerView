@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="147dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/giacchuyen" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="148dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="584dp"
+        android:text="Cáp chuyển từ Cổng  USB sang PS2..."
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+
+        android:layout_width="81dp"
+        android:layout_height="20dp"
+        android:numStars="5"
+        android:rating="3"
+        android:theme="@style/RatingBar"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="69.900 đ"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/tvPPR"
+        android:layout_width="43dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:text="(15)"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvReduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-39%"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGia"
+        app:layout_constraintEnd_toEndOf="@+id/tvPPR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvPPR" />
+</androidx.constraintlayout.widget.ConstraintLayout>
